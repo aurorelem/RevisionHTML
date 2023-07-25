@@ -1,3 +1,38 @@
-p {
+/*p {
     color: red;
-  }
+  }*/
+/* p = le sélécteur, c'est le nom de l'élém html. Il permet de séléct. les élém sur lesquels appliquer le style souhaité
+color: red; = la déclaration, c'est une règle simple qui détermine les proppriétés de l'élem qu'on veut mettre en forme
+color = la propriété, ce sont les différentes façons dont on peut mettre en forme un élem
+red = la valeur de la propriété, elle permet de choisir une mise en forme parmi d'autre pour un propriété donnée
+- chaque ensemble de règles, sauf le sélecteur doit être en accolades {}
+- pour chage déclaration, il faut ut deux points: pour séparer la prop de ses valeurs
+- pour chaque ensemble de règles, il faut ut un point-virgule ; pour séparer les déclaration entre elles
+Si on veut modifier plusieurs propriétés d'un coup, on peut ut. plusieurs déclarations dans une seule règle en les séparant par des points-virgules*/
+/*p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}*/
+p, li, h1 {
+  color: red;
+}
+/*Il est aussi possible de sélectionner plusieurs types d'éléments pour appliquer à tous une même règle
+Il suffit, comme ci-dessus de placer plusieurs sélecteurs, séparés par des virgules*/
+/*Les différents types de sélecteurs:
+- Le sélecteur d'élem (ou sélecteur de balise, ou sélecteur de type):
+      qui sélectionne tout les élém HTML d'un type donné
+      ex: <p> Sélectionne tout les <p>
+-Le sélecteur d'ID:
+      qui sélectionne l'élém d'une page qui possède l'ID fourni (un seul élément pour un ID donné
+      ex: #my-id Sélectionne <p id="my-id"> ou <a id="my-id"
+-Le sélecteur de classe:
+      les élem d'une page qui sont de la classe donnée (pr une donnée, il est possible d'avoir plusieurs éléments qui partagent une même classe)
+      ex: .my-class sélectionne <p class="my-class"> et <a class="my-class"
+-Le sélecteur d'attribut:
+      qui sélectionne les élem de la page qui possède l'attribut donné
+      ex: img[src] sélectionne <img src="monimage.png> mais pas <img>
+Le sélecteur de pseudo-classe:
+      qui sélectionne les élem donnés mais uniquement dans un certain état (par ex: quand on passe une souris dessus)
+      a:hover sélectionne <a> mais uniqueemnt lorsque le pointeur de la souris est au-dessud du lien
+=) Il en existe pleins d'autres sélecteurs, voir le guide sur les sélecteurs*/
