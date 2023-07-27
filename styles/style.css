@@ -39,6 +39,7 @@ Le sélecteur de pseudo-classe:
 html {
   font-size: 10px; /* Signifie la taille de base pr la police = 10px de haut*/
   font-family: "Open Sans", sans-serif;
+  background-color: #D9D8D7; /*Pour changer la couleur de la page*/
 } 
 /*Ce premier ensemble de règle dft une police de base et sa taille pr toute la page.
 <html> est l'élém parent de tous les élem de la page, tous les élem contenu dans la page hériterons-t de la même font-size et font-family*/
@@ -52,3 +53,12 @@ p, li {
   letter-spacing: 1 px; /*C'est pour donner un espacement de caractère entre les deux lettres pour que le comptenu du body soit plus lisible*/
 }
 /*Ensuite, fixons les tailles des différent texte contenu dans le corps du HTML, par ex: <h1> <li> <p>*/
+/*Mettre en forme le corps de la page*/
+body {
+  width: 600px; /*Cette déclaration impose ine largeur de 600px pour le corps de la page*/
+  margin: 0 auto; /*Ici, on a deux valeurs pour la propriété. La première valeur est ut pour le haut et le bas de l'élem, ici 0 et la seconde valeur est ut pour les côtés gauche et droit, ici la valeur auto (elle divise l'espace horizontal disponible en part égale entre la gauche et la droite*/
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+/*L'élément body contient plusieurs déclarations, étudions les, un par une:*/
