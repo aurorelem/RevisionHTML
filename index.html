@@ -3,9 +3,9 @@
 <head> <!--Element qui sert de conteneur pour tout ce qu'on veut inclure mais qui n'est pas du contenu à afficher à l'écran (mots-cles, description pr les moteurs de recherche, lien vers le CSS, déclaration pr les jeux de caractère ut.)-->
     <meta charset="UTF-8"> <!--Définit le jeu de caractère ut. pr le doc. UTF-8 inclu la plupart des caractères pour un grand nombre de langue écrite-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--L'élém. viewport permet que la page soit affichée avec la bonne largeur/à la zone d'affichege-->
-    <title>Révision base HTML</title> <!--Dft le titre de la page, qui apparaît dans l'onglet sur lequel la page est chargée-->
+    <title>Révision bases HTML/CSS</title> <!--Dft le titre de la page, qui apparaît dans l'onglet sur lequel la page est chargée-->
     <!--Mettre ici le choix de nos resources: texte, police, couleur du thème-->
-    <img src="/Images/icons-firefox.png" alt="Mon image de test"> <!--Intègre une image ds la page, l'image à afficher est désignée par l'attribut src (source) qui contient le chemin vers le fichier image--> 
+    <img src="/Images/logohtmlcss-removebg-preview.png" alt="Logo HTML CSS"> <!--Intègre une image ds la page, l'image à afficher est désignée par l'attribut src (source) qui contient le chemin vers le fichier image--> 
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" type="text/css" />
@@ -14,17 +14,15 @@
 </head>
 <body> <!--Cet élém. contient tout le contenu que l'on veut afficher aux ut. lorsqu'ils la visitent -->
     <!-- 4 niveaux de titres souvent utilisé mais contient 6 niveaux en tout-->
-    <h1>Mon titre principal</h1>
-    <h2>Mon titre de deuxième niveau</h2>
-    <h3>Mon sous-titre</h3>
-    <h4>Mon sous-sous-titre</h4>
-    <br>
+    <h1>Mmdn web docs: les bases HTML CSS</h1>
+    <h2>Bases HTML:</h2>
     <p>Voici un paragraphe simple</p>
     <p>À Mozilla, nous formons une communauté de bidouilleuses, concepteurs, constructrices qui travaillent ensemble…</p>
     <br>
-    <!--Les listes <li>: Ordonnées et Non-ordonnées-->
-    <!--Listes non-ordonnées: lorsque l'ordre des éléments n'a pas d'importance, ex: liste de courses <ul>-->
-    <!--Listes ordonées; lorsque l'ordre des éléments est important, ex: recette de cuisine <ol>--> 
+    <p>Les listes (li): Ordonnées et Non-ordonnées</p>
+    <p>Listes non-ordonnées: lorsque l'ordre des éléments n'a pas d'importance, ex: liste de courses (ul)</p>
+    <p>Listes ordonnées; lorsque l'ordre des éléments est important, ex: recette de cuisine (ol)</p>
+    <p>Exemple:</p>
     <p>À Mozilla, nous formons une communauté de</p> 
     <ul>
         <li>Bidouilleuses</li>
@@ -33,13 +31,14 @@
     </ul> 
     <p>qui travaillent ensemble…</p>
     <br>
-    <!--Les liens <a> = "ancre": les liens sont important, ce sont eux qui forment la toile qu'est le web-->
-    <a href="https://www.mozilla.org/fr/about/manifesto/">Manifeste Mozilla</a> <!-- href (hypertext reference) = la valeur de cet attribut avce l'adresse web vers laquelle vous voulez créer un lien. Ne pas ommettre la partie http:// qui indique le protocole-->
-    <!--Les CSS (Cascading Style Sheets en anglais, ou « feuilles de style en cascade ») sont le code utilisé pour mettre en forme une page web.
+    <p>Les liens (a) = "ancre": les liens sont important, ce sont eux qui forment la toile qu'est le web</p>
+    <a href="https://www.mozilla.org/fr/about/manifesto/">Manifeste Mozilla</a> 
+    <p> href (hypertext reference) = la valeur de cet attribut avce l'adresse web vers laquelle vous voulez créer un lien. Ne pas ommettre la partie http:// qui indique le protocole</p>
+    <p>Les CSS (Cascading Style Sheets en anglais, ou « feuilles de style en cascade ») sont le code utilisé pour mettre en forme une page web.
     De la même façon que HTML, CSS n'est pas vraiment un langage de programmation. C'est un langage de feuille de style, c'est-à-dire qu'il permet d'appliquer des styles sur différents éléments sélectionnés dans un document HTML. 
-    Par exemple, on peut sélectionner tous les éléments d'une page HTML qui sont des paragraphes et afficher leurs textes en rouge.  
-    Pour que cela fonctionne, il faut appliquer le CSS au document HTML, sinon la mise en forme décrite dans le fichier CSS n'affectera pas l'affichage de la page HTML dans la navigateur</P>
-    sauvegardez le fichier sous le nom style.css dans votre répertoire styles.</p-->
+    Par exemple, on peut sélectionner tous les éléments d'une page HTML qui sont des paragraphes et afficher leurs textes en rouge.</p>  
+    <p>Pour que cela fonctionne, il faut appliquer le CSS au document HTML, sinon la mise en forme décrite dans le fichier CSS n'affectera pas l'affichage de la page HTML dans la navigateur
+    sauvegardez le fichier sous le nom style.css dans votre répertoire styles.</p>
     <br>
     <h2>Le CSS: <i>des boîtes, des boîte et encore des boîtes</i></h2>
     <p>Avec le CSS tout tourne autour des boîtes: définir leurs tailles, leurs couleurs, leurs positions, etc...

@@ -57,7 +57,7 @@ p, li {
 body {
   width: 600px; /*Cette déclaration impose ine largeur de 600px pour le corps de la page*/
   margin: 0 auto; /*Ici, on a deux valeurs pour la propriété. La première valeur est ut pour le haut et le bas de l'élem, ici 0 et la seconde valeur est ut pour les côtés gauche et droit, ici la valeur auto (elle divise l'espace horizontal disponible en part égale entre la gauche et la droite*/
-  background-color: #ff9500;
+  background-color: #BFBFBD;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
