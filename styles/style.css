@@ -36,22 +36,51 @@ html {
 } 
 /*Ce premier ensemble de règle dft une police de base et sa taille pr toute la page.
 <html> est l'élém parent de tous les élem de la page, tous les élem contenu dans la page hériterons-t de la même font-size et font-family*/
+
+body {
+  width: 600px; /*Cette déclaration impose une largeur de 600px pour le corps de la page*/
+  margin: 0 auto; /*Cette règle dft les marge de l'élem bosy. Ici, on a deux valeurs pour la propriété. La première valeur est ut pour le haut et le bas de l'élem, ici 0 et la seconde valeur est ut pour les côtés gauche et droit, ici la valeur auto (elle divise l'espace horizontal disponible en part égale entre la gauche et la droite*/
+  background-color: #BFBFBD; /*Cette règle détermine la couleur de fond de l'élém body*/
+  padding: 0 20px 20px 20px; /*Cette règle dft les expacements interne, padding, de l'élem body. Les 4 valeurs sont spécifiées dans l'ordre sont: padding en haut (0), padding à droite (20px), padding en bas (20px), et padding à gauche (20px). Cela crée un espace de 20 px autour de l'élém body*/
+  border: 5px solid #737372; /*Cette règle dft une bordure autour de l'élém body. Elle a une épaisseur de 5px, un style solid (ligne pleine) et une couleur*/
+}
+
 h1 {
   font-size: 60px;
   text-align: center; /*Pour centrer le texte*/
+  margin: 0; /*Pour surcharger le style par défault du h1 et se débarasser de cet espace en haut du corps de page, on met une marge nulle*/
+  padding: 20px 0; /*On ajoute 20px de padding en haut et en bas du titre*/
+  color: #00539f; /*C'est la couleur de la police*/
+  text-shadow: 3px /*Cette propriété permet d'applique une ombre au contenu de l'élem. La 1er correspond au décalage horizontal, en px, donc plus la valeur est élevée, plus l'ombre porte loin. Une valeur négative déplace l'ombre vers la gauche*/
+  3px /*Cette valeur correspond au décalage vertical entre l'ombre et le texte, donc plus la valeur est élevée plus l'ombre va vers le bas. Une valeur négative déplace l'ombre vers le haut*/
+  1px /*Cette valeur correspond au rayon de flou pour l'ombre, en px, donc plus la valeur est élevée plus l'ombre sera floue*/
+  black; /*Cette valeur dft la couleur ut pour l'ombre*/
+  
 }
+
+h2 {
+  font-size: 30px;
+  text-align: left;
+  text-decoration: underline;
+  margin: 0;
+  padding: 10px 0;
+  color: #00539f;
+}
+
 p, li {
   font-size: 16px;
+  text-align: justify;
   line-height: 2; /*C'est pour donner une taille de ligne*/
   letter-spacing: 1 px; /*C'est pour donner un espacement de caractère entre les deux lettres pour que le comptenu du body soit plus lisible*/
 }
 /*Ensuite, fixons les tailles des différent texte contenu dans le corps du HTML, par ex: <h1> <li> <p>*/
 /*Mettre en forme le corps de la page*/
-body {
-  width: 600px; /*Cette déclaration impose ine largeur de 600px pour le corps de la page*/
-  margin: 0 auto; /*Ici, on a deux valeurs pour la propriété. La première valeur est ut pour le haut et le bas de l'élem, ici 0 et la seconde valeur est ut pour les côtés gauche et droit, ici la valeur auto (elle divise l'espace horizontal disponible en part égale entre la gauche et la droite*/
-  background-color: #BFBFBD;
-  padding: 0 20px 20px 20px;
-  border: 5px solid #737372;
+
+img {
+  display: block; 
+  margin: 0 auto;
 }
-/*L'élément body contient plusieurs déclarations, étudions les, un par une:*/
+/*On va centrer l'image pour que ce soit plus joli. On pourrait utiliser margin: 0 auto, comme on l'a fait avant, mais on a besoin d'autre chose. 
+L'élément body est un élément de bloc, cela signifie qu'il prend de l'espace et qu'on peut lui appliquer des marges et d'autres valeur pour l'espacement. 
+En revanche, les images sont des éléments inline (ce qu'on pourrait traduire par « en ligne »), ce qui signifie qu'on ne peut pas leur appliquer ces valeurs d'espacement. 
+Pour pouvoir appliquer des marges sur l'image comme pour un bloc, on utilise display: block; pour que l'image se comporte comme un élément de bloc.*/
