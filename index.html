@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> <!--Définit le jeu de caractère ut. pr le doc. UTF-8 inclu la plupart des caractères pour un grand nombre de langue écrite-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--L'élém. viewport permet que la page soit affichée avec la bonne largeur/à la zone d'affichege-->
     <title>Révision bases HTML/CSS</title> <!--Dft le titre de la page, qui apparaît dans l'onglet sur lequel la page est chargée-->
+    <a href="https://www.flaticon.com/fr/icones-gratuites/revision" title="révision icônes">Révision icônes créées par alfanz - Flaticon</a>
     <!--Mettre ici le choix de nos resources: texte, police, couleur du thème-->
     <img src="/Images/logohtmlcss-removebg-preview.png" alt="Logo HTML CSS"> <!--Intègre une image ds la page, l'image à afficher est désignée par l'attribut src (source) qui contient le chemin vers le fichier image--> 
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
@@ -39,6 +40,19 @@
     Par exemple, on peut sélectionner tous les éléments d'une page HTML qui sont des paragraphes et afficher leurs textes en rouge.</p>  
     <p>Pour que cela fonctionne, il faut appliquer le CSS au document HTML, sinon la mise en forme décrite dans le fichier CSS n'affectera pas l'affichage de la page HTML dans la navigateur
     sauvegardez le fichier sous le nom style.css dans votre répertoire styles.</p>
+    <br>
+    <h2>Anatomie d'une règle CSS</h2>
+    <img src="Images/css-declarationl.png" alt="Une déclaration d'une règle en CSS">
+    <p>p = le sélécteur, c'est le nom de l'élém html. Il permet de séléct. les élém sur lesquels appliquer le style souhaité</p>
+    <p>color: red; = la déclaration, c'est une règle simple qui détermine les proppriétés de l'élem qu'on veut mettre en forme</p>
+    <p>color = la propriété, ce sont les différentes façons dont on peut mettre en forme un élem</p>
+    <p>red = la valeur de la propriété, elle permet de choisir une mise en forme parmi d'autre pour un propriété donnée
+        <ol>
+            <li>chaque ensemble de règles, sauf le sélecteur doit être en accolades {}</li>
+            <li>pour chage déclaration, il faut ut deux points: pour séparer la prop de ses valeurs</li>
+            <li>pour chaque ensemble de règles, il faut ut un point-virgule ; pour séparer les déclaration entre elles</li>
+        </ol>
+    <p>Si on veut modifier plusieurs propriétés d'un coup, on peut ut. plusieurs déclarations dans une seule règle en les séparant par des points-virgules</p>
     <br>
     <h2>Le CSS: <i>des boîtes, des boîte et encore des boîtes</i></h2>
     <p>Avec le CSS tout tourne autour des boîtes: définir leurs tailles, leurs couleurs, leurs positions, etc...
